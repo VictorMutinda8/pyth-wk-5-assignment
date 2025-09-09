@@ -1,4 +1,4 @@
-# Base class
+
 class Device:
     def __init__(self, brand, model):
         self.brand = brand
@@ -7,11 +7,9 @@ class Device:
     def device_info(self):
         return f"Device: {self.brand} {self.model}"
 
-
-# Derived class (inheritance from Device)
 class Smartphone(Device):
     def __init__(self, brand, model, storage, battery):
-        super().__init__(brand, model)  # call parent constructor
+        super().__init__(brand, model) 
         self.storage = storage
         self.battery = battery
 
@@ -26,19 +24,15 @@ class Smartphone(Device):
         return f"{self.device_info()} | Storage: {self.storage}GB | Battery: {self.battery}%"
 
 
-# Example usage for Assignment 1
 print("=== Assignment 1: Smartphone Class ===")
 phone1 = Smartphone("Apple", "iPhone 14", 128, 80)
 print(phone1.phone_info())
 phone1.make_call("+254703814000")
 phone1.charge(15)
 
-print("\n")  # spacing
+print("\n")  
 
 
-# =====================================
-# Activity 2: Polymorphism Challenge 🎭
-# =====================================
 
 class Animal:
     def move(self):
@@ -59,8 +53,6 @@ class Fish(Animal):
     def move(self):
         print("Swimming 🐠")
 
-
-# Example usage for Activity 2
 print("=== Activity 2: Polymorphism Challenge ===")
 animals = [Dog(), Bird(), Fish()]
 

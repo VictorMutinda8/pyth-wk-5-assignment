@@ -41,17 +41,17 @@ class Animal:
 
 class Dog(Animal):
     def move(self):
-        print("Running 🐕")
+        print("Running ")
 
 
 class Bird(Animal):
     def move(self):
-        print("Flying 🐦")
+        print("Flying ")
 
 
 class Fish(Animal):
     def move(self):
-        print("Swimming 🐠")
+        print("Swimming ")
 
 print("=== Activity 2: Polymorphism Challenge ===")
 animals = [Dog(), Bird(), Fish()]
